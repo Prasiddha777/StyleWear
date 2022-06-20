@@ -2,8 +2,8 @@ const data = {
   products: [
     // Object=>{}
     {
-      name: "Nike Slim Shirt",
-      slug: "nike-slim-shirt",
+      name: "Nike Shirt",
+      slug: "nike-shirt",
       category: "Shirts",
       image: "/images/first.jpg",
       price: 120,
@@ -14,9 +14,9 @@ const data = {
       description: "high quality shirt",
     },
     {
-      name: "Nike Slim Shirt",
-      slug: "nike-slim-shirt",
-      category: "Shirts",
+      name: "Denim Pant",
+      slug: "denim-pant",
+      category: "Pant",
       image: "/images/first.jpg",
       price: 120,
       countInStock: 10,
@@ -26,9 +26,21 @@ const data = {
       description: "high quality shirt",
     },
     {
-      name: "Nike Slim Shirt",
-      slug: "nike-slim-shirt",
-      category: "Shirts",
+      name: "Skirt",
+      slug: "skirt-girls",
+      category: "Skirt",
+      image: "/images/first.jpg",
+      price: 120,
+      countInStock: 10,
+      brand: "Nike",
+      rating: 4.5,
+      numReviews: 10,
+      description: "high quality shirt",
+    },
+    {
+      name: "Nike Shoes",
+      slug: "nike-shoes",
+      category: "Shoes",
       image: "/images/first.jpg",
       price: 120,
       countInStock: 10,

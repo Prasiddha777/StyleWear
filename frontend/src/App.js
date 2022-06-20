@@ -5,6 +5,10 @@ import ProductScreen from "./screens/ProductScreen";
 function App() {
   return (
     <BrowserRouter>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+      </style>
       <div>
         <header>
           <Link to="/">Style&#38;Wear</Link>
