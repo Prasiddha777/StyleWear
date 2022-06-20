@@ -1,4 +1,3 @@
-# StyleWear
 # Style&Wear
 
 * * *
