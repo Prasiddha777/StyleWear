@@ -9,7 +9,7 @@ custom attribute options
 *   To enable customers to view their order history and shipping status.
 *  To allow secure payment through integration with an online payment gateway
 such as PayPal.
-*   I To allow admins to manage products easily
+*  To allow admins to manage products easily
 
 
 
