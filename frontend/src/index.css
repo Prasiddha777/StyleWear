@@ -6,7 +6,6 @@ body {
   font-family: "Abel", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
 
 /* code {
@@ -21,23 +20,27 @@ header {
   /* text-align: center; */
   /* 1 REM = 16PX */
 }
-header a {
+.site-container {
+  min-height: 100vh;
+}
+/* header a {
   color: #ffff;
   font-weight: bold;
   text-decoration: none;
   padding-left: 1rem;
-}
+} */
 main {
-  padding: 1rem;
+  flex: 1;
   /* background-color: #ddddbb; */
   /* border: 2px solid red; */
 }
 .imageContainer {
   height: 65vh;
   width: 100%;
+
   /* background-color: #f49237; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255);
   /* border: 1px solid red; */
@@ -45,16 +48,20 @@ main {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
-  padding-right: 16px;
-  padding-left: 16px;
+  /* padding-right: 16px; */
+  /* padding-left: 16px; */
 }
 .col-2 img {
   max-width: 100%;
-  padding: 20px 0;
+  height: 100%;
+  /* padding: 20px 0; */
 }
 .imageContainer h1 {
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 35px;
+  display: inline-block;
+  width: 500px;
+  /* border: 1px solid green; */
 }
 .imageContainer p {
   font-size: 25px;
@@ -84,23 +91,25 @@ button:hover {
   border: 1px solid salmon;
 } */
 .product {
-  /* border: 1px solid #151515; */
-  margin: 1rem;
+  border: 1px solid #151515;
+  margin: 7px;
+  padding: 1rem;
 }
+
 .product img {
   /* width: 100%; */
   /* contain: cover; */
-  max-width: 600px;
-  height: 500px;
+  /* max-width: 300px; */
+  height: 250px;
 }
 .product-info {
-  padding: 1rem;
+  padding: 10px;
 }
 .products button {
   background-color: #151515;
   border: none;
   text-align: center;
-  padding: 10px 10px;
+  padding: 3px 10px;
   color: white;
   transition: background 0.5s;
 }

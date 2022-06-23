@@ -56,7 +56,7 @@ function HomeScreen() {
           <button>Shop Now &#x2192;</button>
         </div>
         <div className="col-2">
-          <img src="/images/clothesOne.jpg"></img>
+          <img src="/images/model2.png"></img>
         </div>
       </div>
 
