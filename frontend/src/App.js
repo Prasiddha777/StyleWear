@@ -8,10 +8,6 @@ import { LinkContainer } from "react-router-bootstrap";
 function App() {
   return (
     <BrowserRouter>
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-      </style>
       <div className="d-flex flex-column site-container">
         <header>
           <Navbar variant="dark">

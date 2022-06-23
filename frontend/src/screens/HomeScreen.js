@@ -1,8 +1,11 @@
 import { useEffect, useReducer, useState } from "react";
-import { Link } from "react-router-dom";
+
 // import data from "../data";
 import axios from "axios";
-import logger from "use-reducer-logger";
+// import logger from "use-reducer-logger";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Product from "../components/Product";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -49,34 +52,25 @@ function HomeScreen() {
     <div>
       <div className="imageContainer">
         <div className="col-2">
+          <img src="/images/shoes5.png"></img>
+        </div>
+        <div className="col-2">
           <h1>
             Give Your Workout <br></br>A new Style!
           </h1>
           <p>“We don’t need fashion to survive, we just desire it so much.” </p>
-          <button>Shop Now &#x2192;</button>
-        </div>
-        <div className="col-2">
-          <img src="/images/model2.png"></img>
+          <button>Shop Now</button>
         </div>
       </div>
 
       <h3>FEATURED PRODUCTS</h3>
-      <div className="products">
+      <Row>
         {products.map((products) => (
-          <div className="product" key={products.slug}>
-            <Link to={`/product/${products.slug}`}>
-              <img src={products.image} alt={products.name} />
-            </Link>
-            <Link to={`/product/${products.slug}`}>
-              <p>{products.name}</p>
-            </Link>
-            <p>
-              <strong>Rs.{products.price}</strong>
-            </p>
-            <button>Add to Cart</button>
-          </div>
+          <Col key={products.slug} sm={6} md={4} lr={5} className="mb-3">
+            <Product products={products}></Product>
+          </Col>
         ))}
-      </div>
+      </Row>
     </div>
   );
 }
