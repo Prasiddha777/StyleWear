@@ -8,6 +8,8 @@ import Col from "react-bootstrap/Col";
 import Product from "../components/Product";
 import { Helmet } from "react-helmet-async";
 import ListGroup from "react-bootstrap/ListGroup";
+import LoadingBox from "../components/Loading";
+import MessageBox from "../components/MessageBox";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -82,19 +84,26 @@ function HomeScreen() {
           </Card>
         </div>
         <div className="col-2">
-          {/* <img src="/images/shoes5.png"></img> */}
           <img src="/images/shoes6.png"></img>
         </div>
       </div>
 
       <h3>FEATURED PRODUCTS</h3>
-      <Row>
-        {products.map((products) => (
-          <Col key={products.slug} sm={5} md={3} lr={5} className="mb-3">
-            <Product products={products}></Product>
-          </Col>
-        ))}
-      </Row>
+      <div className="products">
+        {loading ? (
+          <LoadingBox />
+        ) : error ? (
+          <MessageBox variant="danger">{error}</MessageBox>
+        ) : (
+          <Row>
+            {products.map((products) => (
+              <Col key={products.slug} sm={5} md={3} lr={5} className="mb-3">
+                <Product products={products}></Product>
+              </Col>
+            ))}
+          </Row>
+        )}
+      </div>
     </div>
   );
 }
