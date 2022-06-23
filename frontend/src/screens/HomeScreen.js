@@ -1,11 +1,13 @@
 import { useEffect, useReducer, useState } from "react";
-
+import Card from "react-bootstrap/Card";
 // import data from "../data";
 import axios from "axios";
 // import logger from "use-reducer-logger";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Product from "../components/Product";
+import { Helmet } from "react-helmet-async";
+import ListGroup from "react-bootstrap/ListGroup";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -50,23 +52,45 @@ function HomeScreen() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Style&#38;Wear</title>
+      </Helmet>
       <div className="imageContainer">
         <div className="col-2">
-          <img src="/images/shoes5.png"></img>
+          <Card>
+            <Card.Body>
+              <ListGroup variant="flush">
+                <ListGroup.Item>
+                  <Row>
+                    <h1>
+                      Give Your Workout <br></br>A new Style!
+                    </h1>
+                  </Row>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <Row>
+                    {" "}
+                    <p>
+                      “We don’t need fashion to survive, we just desire it so
+                      much.”{" "}
+                    </p>
+                    <button>Shop Now</button>
+                  </Row>
+                </ListGroup.Item>
+              </ListGroup>
+            </Card.Body>
+          </Card>
         </div>
         <div className="col-2">
-          <h1>
-            Give Your Workout <br></br>A new Style!
-          </h1>
-          <p>“We don’t need fashion to survive, we just desire it so much.” </p>
-          <button>Shop Now</button>
+          {/* <img src="/images/shoes5.png"></img> */}
+          <img src="/images/shoes6.png"></img>
         </div>
       </div>
 
       <h3>FEATURED PRODUCTS</h3>
       <Row>
         {products.map((products) => (
-          <Col key={products.slug} sm={6} md={4} lr={5} className="mb-3">
+          <Col key={products.slug} sm={5} md={3} lr={5} className="mb-3">
             <Product products={products}></Product>
           </Col>
         ))}

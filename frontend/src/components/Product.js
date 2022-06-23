@@ -16,13 +16,13 @@ function Product(props) {
       <Card.Body>
         <Link to={`/product/${products.slug}`}>
           <Card.Title>{products.name}</Card.Title>
-          <Rating
-            rating={products.rating}
-            numReviews={products.numReviews}
-          ></Rating>
-          <Card.Text>Rs.{products.price}</Card.Text>
-          <Button>Add to cart</Button>
         </Link>
+        <Rating
+          rating={products.rating}
+          numReviews={products.numReviews}
+        ></Rating>
+        <Card.Text>Rs.{products.price}</Card.Text>
+        <Button varaint="primary">Add to cart</Button>
       </Card.Body>
     </Card>
   );
