@@ -104,6 +104,9 @@ function HomeScreen() {
           </Row>
         )}
       </div>
+      {/* BRAND WE SELL */}
+      <h3>BRANDS WE SELL</h3>
+      {/* End */}
     </div>
   );
 }
