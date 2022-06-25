@@ -133,3 +133,6 @@ div h3 {
   text-decoration: none !important;
   color: #151515;
 }
+.img-thumbnail {
+  height: 80px;
+}
