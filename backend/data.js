@@ -2,7 +2,7 @@ const data = {
   products: [
     // Object=>{}
     {
-      _id: "1",
+      // _id: "1",
       name: "Mens Shirt",
       slug: "shirt",
       category: "Shirt",
@@ -15,7 +15,7 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "2",
+      // _id: "2",
       name: "kids Shirt",
       slug: "kids-shirt",
       category: "Shirt",
@@ -28,7 +28,7 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "3",
+      // _id: "3",
       name: "White Shirt",
       slug: "white-shirt",
       category: "Shirt",
@@ -41,7 +41,7 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "4",
+      // _id: "4",
       name: "Mens Shoes",
       slug: "nike-shoes",
       category: "Shoes",
@@ -54,8 +54,8 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "5",
-      name: "Mens Shoes",
+      // _id: "5",
+      name: "Mens Shoes Nike",
       slug: "nike-mens-shoes",
       category: "Shoes",
       image: "/images/shoes10.jpg",
@@ -67,7 +67,7 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "6",
+      // _id: "6",
       name: "Mens Jacket",
       slug: "nike-jacket",
       category: "Jacket",
@@ -80,7 +80,7 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "7",
+      // _id: "7",
       name: "Mens Hoodie",
       slug: "hoodie",
       category: "Hoodie",
@@ -93,8 +93,8 @@ const data = {
       description: "high quality shirt",
     },
     {
-      _id: "8",
-      name: "Mens Jacket",
+      // _id: "8",
+      name: "Womens Jacket",
       slug: "nike-mens-jacket",
       category: "Shoes",
       image: "/images/jacket1.jpg",
